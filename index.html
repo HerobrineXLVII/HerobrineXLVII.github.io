@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notflix</title>
+    <!-- 1. FIXED ICON PATH -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Splash Intro Screen -->
+    <div id="splash-screen" class="splash">
+        <!-- 2. FIXED INTRO LOGO PATH -->
+        <img src="images/N.png" alt="Notflix Logo" class="splash-logo">
+    </div>
+
+
+
+    <!-- Navigation Bar -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-left">
+            <h1 class="logo" id="logo-home">NOTFLIX</h1>
+            <ul class="nav-links">
+                <li class="active">Home</li>
+                <li>TV Shows</li>
+                <li>Movies</li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <!-- Search Field Wrapper -->
+            <div class="search-box" id="search-box-container">
+                <!-- Clickable Search Button Tag -->
+                <button type="button" class="nav-btn" id="search-trigger-btn">🔍</button>
+                <input type="text" id="search-input" class="search-input" placeholder="Search The Sus Steve titles...">
+            </div>
+            <!-- Clickable Popcorn Button Tag -->
+            <button type="button" class="nav-btn avatar" id="popcorn-avatar">🍿</button>
+        </div>
+    </nav>
+
+    <!-- Main Dynamic Hero Banner -->
+    <header id="banner" class="banner">
+        <div class="banner-content">
+            <h1 id="banner-title" class="banner-title">Loading Featured Title...</h1>
+            <div class="banner-buttons">
+                <button id="play-btn" class="btn btn-play">► Play</button>
+                <button id="info-btn" class="btn btn-info">ⓘ More Info</button>
+            </div>
+            <p id="banner-desc" class="banner-desc">Gathering streaming data for your profile layout...</p>
+        </div>
+        <div class="banner-fade-bottom"></div>
+    </header>
+
+    <!-- Dynamic Movie Rows Layout -->
+    <main class="container">
+        <!-- Smart History Feed Category -->
+        <section class="row" id="row-watch-again-section" style="display: none;">
+            <h2>Watch It Again</h2>
+            <div id="watch-again-row" class="row-posters"></div>
+        </section>
+
+        <section class="row">
+            <h2>Trending Now</h2>
+            <div id="trending-row" class="row-posters"></div>
+        </section>
+
+        <section class="row">
+            <h2>Popular TV Shows</h2>
+            <div id="tv-row" class="row-posters"></div>
+        </section>
+
+        <section class="row">
+            <h2>Action & Adventure</h2>
+            <div id="action-row" class="row-posters"></div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
